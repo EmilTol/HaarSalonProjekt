@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.haarsalonprojekt.ui.TableController">
+   <children>
+      <TableView fx:id="timeTable" layoutX="20.0" layoutY="72.0" prefHeight="309.0" prefWidth="730.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="95.5999870300293" text="Kunde navn" />
+          <TableColumn fx:id="number" prefWidth="82.19998168945312" text="Nummer" />
+          <TableColumn fx:id="gender" prefWidth="43.4000244140625" text="Køn" />
+          <TableColumn fx:id="treatment" prefWidth="107.20002746582031" text="Behandling" />
+          <TableColumn fx:id="price" prefWidth="59.999969482421875" text="Pris" />
+          <TableColumn fx:id="duration" prefWidth="60.60003662109375" text="Varighed" />
+          <TableColumn fx:id="time" prefWidth="113.0" text="Tid" />
+          <TableColumn fx:id="barbar" prefWidth="93.0" text="Frisør" />
+          <TableColumn fx:id="status" prefWidth="68.5999755859375" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="196.0" layoutY="21.0" text="Tidsbestillinger">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="38.0" layoutY="409.0" mnemonicParsing="false" onAction="#switchToCreate" prefHeight="30.0" prefWidth="134.0" text="Opret ny bestilling">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="183.0" layoutY="409.0" mnemonicParsing="false" onAction="#switchToEdit" prefHeight="30.0" prefWidth="129.0" text="Rediger bestilling">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="454.0" layoutY="409.0" mnemonicParsing="false" onAction="#handleCancelAppointment" prefHeight="30.0" prefWidth="113.0" text="Aflys bestilling">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="673.0" layoutY="409.0" mnemonicParsing="false" onAction="#switchToStart" prefHeight="30.0" prefWidth="61.0" text="Log ud">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="myCheckBox" layoutX="504.0" layoutY="34.0" mnemonicParsing="false" text="Tidligere bestillinger">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </CheckBox>
+      <Button layoutX="325.0" layoutY="409.0" mnemonicParsing="false" onAction="#handleCloseAppointment" prefHeight="30.0" prefWidth="120.0" text="Afslut bestilling">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
